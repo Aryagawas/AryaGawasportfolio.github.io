@@ -77,11 +77,51 @@ display: block;
     min-height: 100vh;
     height: 100vh;
     max-height: 700px;
+    
 }
+.newdiv{
+    display:flex;
+    
+    padding-right: 20px;
+    flex-direction: row;
+}
+.sec_img img{
+    border-radius: 50px;
+    z-index: 2;
+    position: relative;
+  
+}
+.sec_img img:hover{
+    top: -5px;   /* Moves image up */
+    left: -5px;
+    
+  
+}
+.sec_img{
+    padding-left: 100px;
+    position: relative;
+    z-index: 1;
+  
+    
+}
+.sec_img::before {
+    content: "";
+    position: absolute;
+    top: 5px;    
+    left: 115px;    
+    width: 250px;
+    height: 250px;
+    box-shadow: 3px 3px 2px #64ffda;
+    border: 2px solid #64ffda;
+    border-radius: 50px;
+    z-index: -1;
+  }
 
 .sec_div_1{
+
     font-size: 16px;
     color: #64ffda;
+    
 }
 .sec_div_1 h1 i {
     padding:5px;
@@ -152,10 +192,15 @@ display: block;
     display: flex;
     
     align-items: center;
-    position: relative;
+    
     margin: 10px 0px 40px;
     width: 100%;
     
+}
+.skills h3{
+    color:#ffffff; 
+    margin: 10px 0px 40px 0px;
+    font-size: 32px;
 }
 .about_ div p{
     font-size: 20px;
@@ -260,7 +305,7 @@ display: block;
     padding-left: 30px;
 }
 .abc1 img{
-    border: 22px0px solid rgb(253, 251, 251);
+    border: 22px 0px solid rgb(253, 251, 251);
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(66, 202, 171,0.6);
 }
@@ -281,7 +326,7 @@ abc2{
 
 }
 .abc2 img{
-    border: 22px0px solid rgb(253, 251, 251);
+    border: 22px 0px solid rgb(253, 251, 251);
     border-radius: 10px;
     box-shadow: 8px 8px 10px rgba(79, 232, 196, 0.6);
 }
@@ -335,3 +380,39 @@ abc2{
     margin-top: 40px;
     text-align: center;
 }
+table {
+    width: 600px;
+    border-collapse: collapse;
+    color: #ffffff; /* Text color */
+    background-color: #1a1a2e; 
+    
+  }
+
+  th, td {
+    border: 1px solid #64ffda;
+    padding: 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #8892b05a; 
+  }
+  .table1{
+    position: relative;
+    top: 100px;
+    left: 300px;
+    
+  }
+
+  .certimg{
+    padding: 70px;
+    padding-left: 250px;
+  }
+  .certimg img{
+    
+    
+    border: 22px 0px solid rgb(253, 251, 251);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(66, 202, 171,0.6);
+    
+  }
